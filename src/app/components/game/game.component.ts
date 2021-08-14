@@ -1,15 +1,18 @@
 import { Component, OnInit } from '@angular/core';
-
+declare var ChessBoard: any;
 @Component({
-  selector: 'app-game',
+  selector: 'game',
   templateUrl: './game.component.html',
-  styleUrls: ['./game.component.css']
+  styleUrls: ['./game.component.css'],
 })
 export class GameComponent implements OnInit {
-
-  constructor() { }
+  public board: any;
+  constructor() {}
 
   ngOnInit(): void {
+    this.board = ChessBoard('game', {
+      position: 'start',
+      draggable: true,
+    });
   }
-
 }
