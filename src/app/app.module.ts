@@ -17,9 +17,10 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { GameComponent } from './components/game/game.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, GameComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
